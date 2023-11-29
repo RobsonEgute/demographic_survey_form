@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Demograhic survey</title>
+</head>
+<body>
+    <div class="survey-title" id="title"><h1>Demographic Survey</h1></div>
+    <div class="form-container">
+        <form action="/api/survey" method="post">
+            <fieldset>
+                <div class="input-container" id="first-name-container">
+                    <label for="first-name" id="first-name-label" class="label">First name:</label>
+                </br>
+                    <input type="text" name="first-name" id="first-name" class="input" placeholder="first name" required>
+                </div>
+                <div class="input-container" id="last-name-container">
+                    <label for="last-name" id="last-name-label" class="label">Last name:</label>
+                </br>
+                    <input type="text" name="last-name" id="last-name" class="input" placeholder="last name" required>
+                </div>
+                <div id="age-container" class="input-container">
+                    <label for="age" class="label" id="age-label">Age:</label>
+                </br>
+                    <input type="number" name="age" class="input" id="age" placeholder="age" required/>
+                </div>
+                <div class="input-container" id="height-container">
+                    <label for="height" class="label" id="height-label">Height:</label>
+                </br>
+                    <input type="number" name="height" id="height" class="input" placeholder="height in inches" required/>
+                </div>
+                <div class="input-container" id="mobile-number-container">
+                    <label for="mobile-number" class="label" id="mobile-number-label">Mobile number:</label>
+                </br>
+                    <input type="number" name="mobile-number" class="input" id="mobile-number" placeholder="Enter your mobile number" required/>
+                </div>
+                <div class="input-container" id="email-container">
+                    <label for="email" class="label" id="email-label">Email:</label>
+                </br>
+                    <input type="text" name="email" class="input" id="email" placeholder="Enter your email" required/>
+                </div>
+                <div class="input-container" id="address-container">
+                    <label for="address" class="label" id="address-label">Address:</label>
+                </br>
+                    <input type="text" name="address" class="input" id="address" placeholder="Enter your address" required/>
+                </div>
+
+
+                <div class="input-container" id="education-container">
+                </br>
+            </br>
+    
+                        <div>
+                            <label for="educational-institution-1" class="label" id="education-label-1">Educational Institution:</label>
+                        </br>
+                            <input type="text" name="educational-institution-1" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="start-date-1" id="start-date-1-label" class="label">Start Date:</label>
+                                <input type="date" name="start-date-1" id="start-date-1" class="date-input">
+                            </div>
+                            <div>
+                                <label for="end-date-1" id="start-date-1-label" class="label">End Date:</label>
+                                <input type="date" name="end-date-1" id="end-date-1" class="date-input">
+                            </div>    
+                        </div>
+                    
+                </br>
+                    <!--
+                        <div>
+                            <label for="educational-institution-2" class="label" id="education-label">Educational Institution:</label>
+                        </br>
+                            <input type="text" name="educational-institution-2" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="start-date-2" id="start-date-2-label" class="label">Start Date:</label>
+                                <input type="date" name="start-date-2" id="start-date-1" class="date-input">
+                            </div>
+                            <div>
+                                <label for="end-date-2" id="start-date-2-label" class="label">End Date:</label>
+                                <input type="date" name="end-date-2" id="end-date-2" class="date-input">
+                            </div>    
+                        </div>
+                    
+                </br>
+                    
+                        <div>
+                            <label for="educational-institution-3" class="label" id="education-label-3">Educational Institution:</label>
+                        </br>
+                            <input type="text" name="educational-institution-2" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="start-date-3" id="start-date-3-label" class="label">Start Date:</label>
+                                <input type="date" name="start-date-3" id="start-date-3" class="date-input">
+                            </div>
+                            <div>
+                                <label for="end-date-3" id="start-date-3-label" class="label">End Date:</label>
+                                <input type="date" name="end-date-3" id="end-date-3" class="date-input" />
+                            </div>    
+                        </div>
+                    -->
+                </div>
+
+            </br>
+            </br>
+                <div>
+                    <label for="religion" id="religion-label" class="label">Religion:</label>
+                </br>
+                    <input type="text" name="religion" id="religion" class="input" />
+                </div> 
+                <div>
+                    <label for="language" id="language-label" class="label">language:</label>
+                    <select name="language" id="language" class="select">
+                        <option disabled selected value>Select your language</option>
+                        <option>English</option>
+                        <option>French</option>
+                        <option>Arabic</option>
+                        <option>Mandarine</option>
+                        <option>Spanish</option>
+                        <option>Portoguese</option>
+                        <option>Other</option>
+                    </select>
+                </br>
+                </br>
+                    <label for="specified-language" id="specified-language" class="label">Please specify your language</label>
+                </br>
+                    <input type="text" class="input" id="language-input" name="specified-language" value="n/a" required />
+                </div>
+
+                <div class="text-cont">
+                    <label for="occupation" id="occupation-label" class="label">Occupation:</label>
+                </br>
+                    <input type="text" name="occupation" id="occupation" class="input" placeholder="what is your occupation">
+                
+                
+                    <label for="favorite-food" id="occupation-label" class="label">Favorite Food:</label>
+                </br>
+                    <input type="text" name="favorite-food" id="favorite-food" class="input">
+                
+                
+                    <label for="short-term-goals" id="short-term-goals-label" class="label">Short term goals:</label>
+                </br>
+                    <input type="text" name="short-term-goals" id="short-term-goals" class="input">
+                
+                    <label for="longterm-goals" id="longterm-goals-label" class="label">Longterm Goals:</label>
+                </br>
+                    <input type="text" name="longterm-goals" id="longterm-goals" class="input">
+                </div>
+
+                <div>
+                    <p>Would you say you found this survey intresting?</p>
+                    <label for="survey-review" id="yes-radius" class="radio-label" name="survey-review">
+                        <input type="radio" name="survey-review" value="yes" id="longterm-goals" class="radio-input">Yes</label>
+                    </br>
+                    <label for="No" id="no-radius" class="radio-label" name="survey-review">
+                        <input type="radio" name="survey-review" value="no" id="longterm-goals" class="radio-input">No</label>
+                    </br>
+                </div>
+            </br>
+                <div class="submit-container">
+                    <input type="submit" value="submit survey" class="submit-button" id="submit"/>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
