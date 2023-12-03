@@ -52,7 +52,7 @@ app.post( "/api/survey", async (req, res) => {
         lastname: data['last_name'],
         age: data.age,
         height: data.height,
-        mobile_number: data.number,
+        mobile_number: data['mobile_number'],
         email: data.email,
         address: data.address,
         educational_institution: data.educational_institution_1,
