@@ -9,17 +9,17 @@
 <body>
     <div class="survey-title" id="title"><h1>Demographic Survey</h1></div>
     <div class="form-container">
-        <form action="/api/survey" method="post">
-            <fieldset>
+        <fieldset>
+        <form method="post" action="/api/survey" >
                 <div class="input-container" id="first-name-container">
-                    <label for="first-name" id="first-name-label" class="label">First name:</label>
+                    <label for="first_name" id="first-name-label" class="label">First name:</label>
                 </br>
-                    <input type="text" name="first-name" id="first-name" class="input" placeholder="first name" required>
+                    <input type="text" name="first_name" id="first_name" class="input" placeholder="first name" required>
                 </div>
                 <div class="input-container" id="last-name-container">
-                    <label for="last-name" id="last-name-label" class="label">Last name:</label>
+                    <label for="last_name" id="last-name-label" class="label">Last name:</label>
                 </br>
-                    <input type="text" name="last-name" id="last-name" class="input" placeholder="last name" required>
+                    <input type="text" name="last_name" id="last_name" class="input" placeholder="last name" required>
                 </div>
                 <div id="age-container" class="input-container">
                     <label for="age" class="label" id="age-label">Age:</label>
@@ -55,55 +55,19 @@
                         <div>
                             <label for="educational-institution-1" class="label" id="education-label-1">Educational Institution:</label>
                         </br>
-                            <input type="text" name="educational-institution-1" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
+                            <input type="text" name="educational_institution_1" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
                         </div>
                         <div>
                             <div>
                                 <label for="start-date-1" id="start-date-1-label" class="label">Start Date:</label>
-                                <input type="date" name="start-date-1" id="start-date-1" class="date-input">
+                                <input type="date" name="start_date" id="start-date-1" class="date-input">
                             </div>
                             <div>
                                 <label for="end-date-1" id="start-date-1-label" class="label">End Date:</label>
-                                <input type="date" name="end-date-1" id="end-date-1" class="date-input">
+                                <input type="date" name="end_date" id="end-date-1" class="date-input">
                             </div>    
                         </div>
-                    
                 </br>
-                    <!--
-                        <div>
-                            <label for="educational-institution-2" class="label" id="education-label">Educational Institution:</label>
-                        </br>
-                            <input type="text" name="educational-institution-2" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
-                        </div>
-                        <div>
-                            <div>
-                                <label for="start-date-2" id="start-date-2-label" class="label">Start Date:</label>
-                                <input type="date" name="start-date-2" id="start-date-1" class="date-input">
-                            </div>
-                            <div>
-                                <label for="end-date-2" id="start-date-2-label" class="label">End Date:</label>
-                                <input type="date" name="end-date-2" id="end-date-2" class="date-input">
-                            </div>    
-                        </div>
-                    
-                </br>
-                    
-                        <div>
-                            <label for="educational-institution-3" class="label" id="education-label-3">Educational Institution:</label>
-                        </br>
-                            <input type="text" name="educational-institution-2" class="input" id="educational-institution" placeholder="Enter your educational Institution" required/>
-                        </div>
-                        <div>
-                            <div>
-                                <label for="start-date-3" id="start-date-3-label" class="label">Start Date:</label>
-                                <input type="date" name="start-date-3" id="start-date-3" class="date-input">
-                            </div>
-                            <div>
-                                <label for="end-date-3" id="start-date-3-label" class="label">End Date:</label>
-                                <input type="date" name="end-date-3" id="end-date-3" class="date-input" />
-                            </div>    
-                        </div>
-                    -->
                 </div>
 
             </br>
@@ -127,9 +91,9 @@
                     </select>
                 </br>
                 </br>
-                    <label for="specified-language" id="specified-language" class="label">Please specify your language</label>
+                    <label for="specified-language" id="specified-language" class="label">Please specify your language:</label>
                 </br>
-                    <input type="text" class="input" id="language-input" name="specified-language" value="n/a" required />
+                    <input type="text" class="input" id="language-input" name="specified_language" value="n/a" required />
                 </div>
 
                 <div class="text-cont">
@@ -140,34 +104,33 @@
                 
                     <label for="favorite-food" id="occupation-label" class="label">Favorite Food:</label>
                 </br>
-                    <input type="text" name="favorite-food" id="favorite-food" class="input">
+                    <input type="text" name="favorite_food" id="favorite-food" class="input">
                 
                 
                     <label for="short-term-goals" id="short-term-goals-label" class="label">Short term goals:</label>
                 </br>
-                    <input type="text" name="short-term-goals" id="short-term-goals" class="input">
+                    <input type="text" name="short_term_goals" id="short-term-goals" class="input">
                 
                     <label for="longterm-goals" id="longterm-goals-label" class="label">Longterm Goals:</label>
                 </br>
-                    <input type="text" name="longterm-goals" id="longterm-goals" class="input">
+                    <input type="text" name="longterm_goals" id="longterm-goals" class="input">
                 </div>
 
                 <div>
                     <p>Would you say you found this survey intresting?</p>
                     <label for="survey-review" id="yes-radius" class="radio-label" name="survey-review">
-                        <input type="radio" name="survey-review" value="yes" id="longterm-goals" class="radio-input">Yes</label>
+                        <input type="radio" name="survey_review" value="yes" id="longterm-goals" class="radio-input">Yes</label>
                     </br>
                     <label for="No" id="no-radius" class="radio-label" name="survey-review">
-                        <input type="radio" name="survey-review" value="no" id="longterm-goals" class="radio-input">No</label>
+                        <input type="radio" name="survey_review" value="no" id="longterm-goals" class="radio-input">No</label>
                     </br>
                 </div>
             </br>
                 <div class="submit-container">
                     <input type="submit" value="submit survey" class="submit-button" id="submit"/>
                 </div>
-            </fieldset>
         </form>
-
+    </fieldset>
     </div>
 </body>
 </html>

@@ -7,8 +7,11 @@ body {
     background-size: 100%;
 }
 form{
-    width: 80%;
-    height: 50%;
+   /*padding-top: 50px;
+    margin-top: 30px; */
+    padding-bottom: 40px;
+    background-color: rgb(246, 165, 165);
+    
 }
 h1{
     text-align: center;
@@ -19,6 +22,8 @@ fieldset {
     margin-top: 30px;
     padding-bottom: 40px;
     background-color: rgb(246, 165, 165);
+    width: 80%;
+    height: 50%;
 }
 .form-container {
     display: flex;
